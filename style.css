@@ -1,0 +1,86 @@
+@media only screen and (max-width: 635px) {
+    .desktop-header{
+        display: none !important;
+    }
+    .learn{
+        display: none !important;
+    }
+    .calender{
+        display: none !important;
+    }
+    .start-learning{
+        display: none !important;
+    }
+    .thesis-exhibit{
+        display: none !important;
+    }
+    .footer-desktop{
+        display: none !important;
+    }
+}
+@media only screen and (min-width: 636px) {
+    .mobile-header {
+        display: none !important;
+    }
+    .mobile-learn {
+        display: none !important;
+    }
+    .mobile-calendar {
+        display: none !important;
+    }
+    .start-learning-mobile {
+        display: none !important;
+    }
+    .mobile-thesis {
+        display: none !important;
+    }
+    .footer-mobile {
+        display: none !important;
+    }
+}
+/*DESKTOP HEADER*/
+.desktop-header{
+    background-color: white;
+    height: 64px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+}
+.desktop-logo{
+    display: flex;
+    align-items: center;
+    justify-content:start;
+    font-size: 9px;
+}
+
+.desktop-logo img{
+    height: 32px;
+    width: auto;
+}
+.academy{
+    color: grey;
+    font-weight: lighter;
+}
+
+.desktop-nav{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    justify-content: end;    
+}
+.desktop-nav h2{
+    font-weight:lighter;
+    font-size: 20px;
+}
+#signin{
+    margin-right: 24px;
+}
+/*MOBILE HEADER*/
+.mobile-header{
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
