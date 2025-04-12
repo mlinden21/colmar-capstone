@@ -73,9 +73,17 @@
 .desktop-nav h2{
     font-weight:lighter;
     font-size: 20px;
+    transition: all linear 0.35s 0.1s;
 }
 #signin{
     margin-right: 24px;
+}
+
+.desktop-nav h2:hover{
+    transform: scale(1.05);
+    transform: translateY(-5px);
+    cursor: pointer;
+    
 }
 /*MOBILE HEADER*/
 .mobile-header{
@@ -83,4 +91,135 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
+}
+
+.mobile-header img{
+    transition: all linear 0.2s 0s;
+}
+
+.mobile-header img:hover{
+    transform: scale(1.5);
+    transform: translateY(-5px);
+}
+
+/*DESKTOP LEARN SECTIOM*/
+
+.banner-img{
+    display: inline-block;
+    text-align: center;
+}
+.learn img{
+    width: 60%;
+    height: 60%;
+    margin-right: 24px;
+    margin-left: 24px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    transition: all ease-in 0.4s 0.15s;
+}
+.learn img:hover{
+    transform: scale(1.02);
+}
+
+.learn{
+    display: flex;
+    background-color: rgb(214, 214, 214);
+    width: 100%;
+    margin: 0;
+}
+
+.learn-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
+    width: 40%;
+    color:#2E2E2E;
+    font-size: 13px;
+    gap: 1.2em;
+    padding: 24px;
+}
+
+.learn-text h1{
+    font-family: "Roboto", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    transition: all ease-in 0.4s 0.15s;
+}
+
+.learn-text h1:hover{
+    transform: scale(1.035);
+}
+.learn-text h2{
+    font-size: 1.5rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: bolder;
+    transition: all ease-in 0.4s 0.15s;
+}
+
+.learn-text h2:hover{
+    transform: scale(1.035);
+}
+
+.learn-text button{
+    border: 0;
+    border-radius: 5px;
+    color: white;
+    background-color: #474747;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    transition: all linear 0.3s 0.1s;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+.learn-text button:hover{
+    transform: scale(1.04);
+    background: #868686;
+}
+/*Section 1 mobile*/
+.mobile-learn{
+    background: #e2e2e2;
+}
+.mobile-learn img{
+    width: 100%;
+    height: auto;
+}
+.mobile-learn-text{
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.mobile-learn-text h1{
+    margin-bottom: 32px;
+    font-weight: 550;
+    transition: all ease-in 0.4s 0.15s;
+}
+.mobile-learn-text h1:hover{
+    transform: scale(1.035);}
+    .mobile-learn-text h2:hover{
+        transform: scale(1.035);}
+
+    .mobile-learn-text h2{
+    margin-bottom: 24px;
+    font-weight: lighter;
+    transition: all ease-in 0.4s 0.15s;
+}
+
+#mobile-learn-btn{
+    background: #acacac;
+    border: none;
+    width: 100%;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    color: #FFF;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 6px;
+    margin-bottom: 32px;
+    transition: all linear 0.3s 0.1s;
+}
+
+#mobile-learn-btn:hover{
+    transform: scale(1.04);
+    background: #868686;
 }
