@@ -223,3 +223,123 @@
     transform: scale(1.04);
     background: #868686;
 }
+
+/*Section 2 Desktop*/
+@media only screen and (min-width: 1461px){
+    .calender{
+        height: 1200px !important;
+    }
+}
+@media only screen and (min-width: 1376px) and (max-width: 1460px){
+    .calender{
+        height: 1000px !important;
+    }
+}
+@media only screen and (min-width: 1050px) and (max-width: 1375px) {
+    .calender {
+      height: 1000px !important; 
+    }
+  }
+  @media only screen and (max-width: 1051px) and (min-width: 768px) {
+    .calender {
+      height: 850px !important;
+    }
+  }
+  
+  @media only screen and (max-width: 767px) and (min-width: 636px) {
+    .calender {
+      height: 850px !important;
+    }}
+
+.calender{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: auto auto auto;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    margin-left: 24px;
+    margin-right: 0px;
+    position: relative;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+.practicing{
+    grid-row: 1 / span 3;
+    grid-column: 1 / 2;
+
+}
+.practicing h2{
+    font-size: 17px;
+    font-weight: lighter;
+}
+.practicing h3{
+    font-size: 17px;
+    font-weight: normal;
+}
+.right-grid h1{
+    font-size: 24px;
+}
+.right-grid h2{
+    font-size: 18px;
+    font-weight: normal;
+}
+.right-grid h3{
+    display: inline-block;
+    margin: 0;
+    padding: 5px 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(130, 160, 280);
+    transition: all linear 0.2s 0.1s;
+}
+.right-grid h3:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    cursor: pointer;
+}
+.right-grid{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 24px;
+    background-color: white;
+    border-radius: 8px;
+}
+.right-grid div{
+    display: block;
+}
+.right-grid img{
+    width: 35%;
+    height: auto;
+}
+.right-grid img:hover{
+    transform: translateY(-5px) scale(1.08);
+    transition: all linear 0.2s 0.1s;
+}
+.practicing img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 32px;
+}
+.orientation{
+    grid-row: 1 / 2;   
+    grid-column: 2 / 3; 
+}
+.campus{
+    grid-row: 2 / 3;   
+    grid-column: 2 / 3; 
+}
+.guest-lecture{
+    grid-row: 3 / 4;   
+    grid-column: 2 / 3; 
+}
+.orientation,
+.campus,
+.guest-lecture {
+  display: flex;
+  justify-content: flex-start;
+}
+.right-column{
+    width: 35%;
+    height: auto;
+}
