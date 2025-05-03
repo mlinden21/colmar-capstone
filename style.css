@@ -25,7 +25,7 @@
     .mobile-learn {
         display: none !important;
     }
-    .mobile-calendar {
+    .mobile-calender {
         display: none !important;
     }
     .start-learning-mobile {
@@ -257,8 +257,6 @@
     grid-template-rows: auto auto auto;
     margin-top: 32px;
     margin-bottom: 32px;
-    margin-left: 24px;
-    margin-right: 0px;
     position: relative;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
@@ -342,4 +340,56 @@
 .right-column{
     width: 35%;
     height: auto;
+}
+
+/*Section 2 Mobile*/
+.mobile-calendar{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 32px;
+}
+.orientation-mobile,
+.campus-mobile, .guest-lecture-mobile{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-bottom: 32px;
+}
+.orientation-mobile img,
+.campus-mobile img, .guest-lecture-mobile img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 16px;
+}
+.orientation-mobile h3,
+.campus-mobile h3, .guest-lecture-mobile h3{
+    color: rgb(102, 145, 201);
+    font-weight: 1000;
+    transition: all linear 0.2s 0.1s;
+    padding: 5px;
+    display: inline-block;
+}
+.orientation-mobile h3:hover, .campus-mobile h3:hover, .guest-lecture-mobile h3:hover{
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block;
+}
+.orientation-mobile h2,
+.campus-mobile h2, .guest-lecture-mobile h2{
+    font-size: 18px;
+    font-weight: 500;
+    color: #363636;
+}
+.orientation-mobile h1,
+.campus-mobile h1, .guest-lecture-mobile h1{
+    font-size: 24px;
+    font-weight: 600;
+    color: #000000;
+}
+.orientation-mobile img{
+    margin-top: 16px;
 }
